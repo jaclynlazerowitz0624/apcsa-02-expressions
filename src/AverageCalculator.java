@@ -15,7 +15,11 @@ public class AverageCalculator {
         int score4 = 95;
         int score5 = 83;
 
-        // Your code here
+        int sum = score1 + score2 + score3 + score4 + score5;
+
+        double mean = sum / 5.0;
+
+        System.out.println("The average is: " + mean);
 
     }
 }

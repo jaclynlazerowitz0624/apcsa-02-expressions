@@ -14,7 +14,14 @@ public class TemperatureConverter {
         double fahrenheit = 98.6;
         double celsius = 37.0;
 
-        // Your code here
+        double calcC = (fahrenheit - 32) * 5.0/9.0;
+        double rCelsius = Math.round(calcC * 10.0) / 10.0;
+
+        double calcF = (celsius * 9.0/5.0) + 32;
+        double rFahrenheit = Math.round(calcF * 10.0) / 10.0;
+
+        System.out.println(fahrenheit + " degrees Fahrenheit is " + rCelsius + " degrees celsius.");
+        System.out.println(celsius + " degrees Celsius is " + rFahrenheit + " degrees fahrenheit.");
 
     }
 }
